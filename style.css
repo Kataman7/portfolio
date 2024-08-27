@@ -11,8 +11,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  word-wrap: break-word; /* Pour les anciens navigateurs */
-  overflow-wrap: break-word; /* Standard moderne */
 }
 
 body {
@@ -74,10 +72,11 @@ a:hover {
 ul {
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 li {
-  margin: 10px 15px 0px 0px;
+  padding: 10px 15px 0px 0px;
 }
 
 footer {
@@ -97,5 +96,11 @@ footer img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 5px;
+    max-width: 100%; 
+  }
+
+  li {
+    margin: 15px;
   }
 }
