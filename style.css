@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Absans';
+    src: url('Absans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Pour les anciens navigateurs */
+    overflow-wrap: break-word; /* Standard moderne */
+}
+
+body {
+    padding: 20px;
+    font-family: Absans, Arial, sans-serif;
+    background-color: #FFFF;
+    color: #23272a;
+}
+
+header {
+    text-align: center;
+    margin: 50px 0px 75px 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 50px 75px;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+
+h3 {
+    font-style: italic;
+    font-weight: lighter;
+    color: #99aab5;
+    font-size: medium;
+
+}
+
+h2 {
+    color: #2c2f33;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+a {
+    padding: 10px;
+    background-color: #7289da;
+    color: #FFFF;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    background-color: #f47fff;
+
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin: 10px 15px 0px 0px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 75px;
+}
+
+footer img {
+    max-width: 150px;
+}
