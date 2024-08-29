@@ -40,6 +40,12 @@ section {
   max-width: 800px;
 }
 
+section section {
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 25px;
+  margin-bottom: 0px;
+}
+
 h3 {
   font-style: italic;
   font-weight: lighter;
@@ -97,6 +103,27 @@ footer img {
 
 a img {
   width: 28px;
+}
+
+.bar_bg, .bar_front{
+  height: 25px;
+  border-radius: 15px;
+}
+
+.bar_bg {
+  background-color: #c7cfd4;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.bar_front {
+  background-color: #7289da;
+  width: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bar_front:hover {
+  background-color: #f47fff;
 }
 
 @media (max-width: 600px) {
