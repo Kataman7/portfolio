@@ -1,5 +1,12 @@
 /* ref : https://onepagelove.com/jordi-enric*/
 
+:root {
+  --primary-color: #23272a;
+  --secondary-color: #99aab5;
+  --accent-color: #7289da;
+  --background-color: #f5f5f5;
+}
+
 @font-face {
   font-family: 'Chillax';
   src: url("resources/Chillax-Variable.ttf") format("trueType");
@@ -34,10 +41,9 @@ main {
 
 section {
   display: grid;
-  grid-template-columns: 1fr 10fr;
+  grid-template-columns: 1fr 550px;
   gap: 50px 75px;
   margin-bottom: 20px;
-  max-width: 800px;
 }
 
 section section {
@@ -133,7 +139,7 @@ a img {
     align-items: center;
     justify-content: center;
     padding: 0 5px;
-    max-width: 100%; 
+    width: 100%; 
   }
 
   p {
@@ -142,5 +148,15 @@ a img {
 
   ul {
     justify-content: space-evenly;
+  }
+
+  section section {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+
+  .bar_bg, .bar_front{
+    width: 300px;
   }
 }
