@@ -16,7 +16,7 @@ function updateClock() {
 
 function copyMail() {
     navigator.clipboard.write("antonin.chabaud-pech@etu.umontpellier.fr")
-    alert("email address copied to your clipboard")
+    alert("Email address copied to your clipboard")
 }
 
 setInterval(updateClock, 1000);

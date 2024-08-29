@@ -52,6 +52,12 @@ section section {
   margin-bottom: 0px;
 }
 
+h4 {
+  font-weight: bolder;
+  margin-bottom: 10px;
+  font-size: large;
+}
+
 h3 {
   font-style: italic;
   font-weight: lighter;
@@ -79,7 +85,6 @@ a {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  margin-bottom: 15px;
 }
 
 a:hover {
@@ -90,10 +95,7 @@ ul {
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
-}
-
-li {
-  padding-right: 15px;
+  gap: 15px;
 }
 
 footer {
