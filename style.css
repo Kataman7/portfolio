@@ -26,6 +26,7 @@ body {
   font-family: 'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
   background-color: var(--background-color);
   color: var(--primary-color);
+  animation: animation 1s ease-out forwards;
 }
 
 header {
@@ -57,6 +58,7 @@ h4 {
   font-weight: bolder;
   margin-bottom: 10px;
   font-size: large;
+  animation: animation 1s ease-out forwards;
 }
 
 h3 {
@@ -97,6 +99,7 @@ ul {
   list-style-type: none;
   flex-wrap: wrap;
   gap: 15px;
+  animation: animation 1s ease-out forwards;
 }
 
 footer {
@@ -137,6 +140,7 @@ a img {
 
 p {
   text-align: justify;
+  animation: animation 1s ease-out forwards;
 }
 
 @media (max-width: 600px) {
@@ -161,5 +165,16 @@ p {
 
   .bar_bg, .bar_front{
     width: 300px;
+  }
+}
+
+@keyframes animation {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
   }
 }
