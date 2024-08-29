@@ -1,8 +1,8 @@
 /* ref : https://onepagelove.com/jordi-enric*/
 
 @font-face {
-  font-family: "Absans";
-  src: url("resources/Absans-Regular.woff") format("woff");
+  font-family: 'Chillax';
+  src: url("resources/Chillax-Variable.ttf") format("trueType");
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 
 body {
   padding: 20px;
-  font-family: Absans, Arial, sans-serif;
+  font-family: 'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
   background-color: #ffff;
   color: #23272a;
 }
@@ -53,7 +53,7 @@ h2 {
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 a {
@@ -63,6 +63,11 @@ a {
   text-decoration: none;
   border-radius: 10px;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 15px;
 }
 
 a:hover {
@@ -76,7 +81,7 @@ ul {
 }
 
 li {
-  padding: 10px 15px 0px 0px;
+  padding-right: 15px;
 }
 
 footer {
@@ -90,6 +95,10 @@ footer img {
   max-width: 150px;
 }
 
+a img {
+  width: 28px;
+}
+
 @media (max-width: 600px) {
   section {
     display: flex;
@@ -100,7 +109,11 @@ footer img {
     max-width: 100%; 
   }
 
-  li {
-    margin: 15px;
+  p {
+    text-align: justify;
+  }
+
+  ul {
+    justify-content: space-evenly;
   }
 }

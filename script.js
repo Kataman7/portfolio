@@ -14,5 +14,10 @@ function updateClock() {
     document.getElementById('clock').textContent = timeString;
 }
 
+function copyMail() {
+    navigator.clipboard.write("antonin.chabaud-pech@etu.umontpellier.fr")
+    alert("email address copied to your clipboard")
+}
+
 setInterval(updateClock, 1000);
 updateClock();
