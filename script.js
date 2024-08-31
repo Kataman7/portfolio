@@ -15,7 +15,7 @@ function updateClock() {
 }
 
 function copyMail() {
-    navigator.clipboard.write("antonin.chabaud-pech@etu.umontpellier.fr")
+    navigator.clipboard.writeText("antonin.chabaud-pech@etu.umontpellier.fr")
     alert("Email address copied to your clipboard")
 }
 
