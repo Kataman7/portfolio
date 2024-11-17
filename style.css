@@ -30,6 +30,7 @@ body {
   color: var(--color-primary);
   animation: slideUp 1s ease-out forwards;
   cursor: url('resources/cursor/astro_arrow_32x32-4.cur'), auto;
+  overflow-x: hidden;
 }
 
 button {
