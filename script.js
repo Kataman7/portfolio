@@ -32,3 +32,27 @@ function toggleDetails(id, button) {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const bars = document.querySelectorAll('.bar_front');
+    function isElementInView(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+    function animateBars() {
+      bars.forEach(bar => {
+        const targetWidth = bar.getAttribute('data-width');
+        if (isElementInView(bar)) {
+          bar.style.width = targetWidth;
+        }
+      });
+    }
+    window.addEventListener('scroll', animateBars);
+    animateBars();
+  });
