@@ -1,16 +1,18 @@
 /* ref : https://onepagelove.com/jordi-enric*/
 
 :root {
-  --primary-color: #23272a;
-  --secondary-color: #99aab5;
-  --accent-color: #7289da;
-  --background-color: #f5f5f5;
-  --hovered-color: #f47fff;
+  --color-primary: #ffffff;
+  --color-secondary: #e1e1e1;
+  --color-accent: #141414;
+  --color-background: #000000;
+  --color-hovered: #ffffff;
+  --radius-normal: 0px;
+  --border-normal: 2px;
 }
 
 @font-face {
   font-family: 'Chillax';
-  src: url("resources/Chillax-Variable.ttf") format("trueType");
+  src: url("resources/Better\ VCR\ 6.1.ttf") format("trueType");
   font-weight: normal;
   font-style: normal;
 }
@@ -24,9 +26,15 @@
 body {
   padding: 20px;
   font-family: 'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
-  background-color: var(--background-color);
-  color: var(--primary-color);
+  background-color: var(--color-background);
+  color: var(--color-primary);
   animation: animation 1s ease-out forwards;
+  cursor: url('resources/cursor/astro_arrow_32x32-4.cur'), auto;
+}
+
+button {
+  font-family: 'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
+  margin-top: 15px;
 }
 
 header {
@@ -61,15 +69,20 @@ h4 {
   animation: animation 1s ease-out forwards;
 }
 
-h3 {
+h3, h5 {
   font-style: italic;
   font-weight: lighter;
-  color: var(--secondary-color);
-  font-size: medium;
+  color: var(--color-secondary);
+  font-size: small;
+}
+
+h5 {
+  font-size: 11px;
+  text-align: right;
 }
 
 h2 {
-  color: #2c2f33;
+  color: var(--color-secondary);
   margin-bottom: 25px;
 }
 
@@ -77,21 +90,57 @@ h1 {
   font-weight: bolder;
 }
 
-a {
+p {
+  font-size: small;
+  line-height: 19px;
+}
+
+::selection, ::-moz-selection {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.button {
   padding: 10px;
-  background-color: var(--accent-color);
-  color: var(--background-color);
-  text-decoration: none;
-  border-radius: 10px;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  border-radius: var(--radius-normal);
   transition: background-color 0.3s ease, transform 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
+  border-style: solid;
+  border-width: var(--border-normal);
+  border-color: var(--color-primary);
+  box-shadow: 2px 2px var(--color-background),
+              4px 4px var(--color-primary);
+  text-decoration: none;
+}
+
+.button:hover {
+  box-shadow: 0px 0px;
+  translate: 4px 4px;
+  text-decoration: none;
+}
+
+.button img {
+  width: 25px;
+  height: 25px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
 a:hover {
-  background-color: var(--hovered-color);
+  cursor: url("resources/cursor/astro_link_32x32-4.cur"), auto;
+}
+
+a:hover, strong {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 ul {
@@ -100,6 +149,65 @@ ul {
   flex-wrap: wrap;
   gap: 15px;
   animation: animation 1s ease-out forwards;
+}
+
+a svg {
+  width: 28px;
+  height: 28px;
+}
+
+.bar_bg, .bar_front{
+  height: 25px;
+  border-radius: var(--radius-normal);
+}
+
+.bar_bg {
+  width: 100%;
+  margin-top: 10px;
+  border-style: solid;
+  border-width: var(--border-normal);
+  border-color: var(--color-primary);
+}
+
+.bar_front {
+  background-color: var(--color-primary);
+  width: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  translate: -1px -2px;
+}
+
+p {
+  text-align: justify;
+  animation: animation 1s ease-out forwards;
+  margin-bottom: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  width: 99%;
+}
+
+form, form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form {
+  border-style: solid;
+  border-color: var(--color-primary);
+  border-width: var(--border-normal);
+  padding: 25px;
+  gap: 20px;
+}
+
+form input, form textarea {
+  font-family: 'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
+  padding: 5px;
+  font-size: small;
 }
 
 footer {
@@ -113,37 +221,18 @@ footer img {
   max-width: 150px;
 }
 
-a img {
-  width: 28px;
+.burgerMenu {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 0px 0px 100px 0px;
 }
 
-.bar_bg, .bar_front{
-  height: 25px;
-  border-radius: 15px;
-}
-
-.bar_bg {
-  background-color: #d9d9da;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.bar_front {
-  background-color: var(--accent-color);
-  width: 50%;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.bar_front:hover {
-  background-color: var(--hovered-color);
-}
-
-p {
-  text-align: justify;
-  animation: animation 1s ease-out forwards;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   section {
     display: flex;
     flex-direction: column;
@@ -165,6 +254,10 @@ p {
 
   .bar_bg, .bar_front{
     width: 300px;
+  }
+
+  img {
+    max-width: 550px;
   }
 }
 

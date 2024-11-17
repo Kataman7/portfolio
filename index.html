@@ -1,193 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Antonin Chabaud-Pech</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="resources/icons/slack.svg" type="image/x-icon" />
-  </head>
 
-  <body>
-    <header>
-      <h1>Antonin Chabaud-Pech</h1>
-      <h2>Computer science students</h2>
-      <h3>Sète, France</h3>
-    </header>
-    <main>
-      <section>
-        <div>
-          <h3>Links</h3>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a href="https://github.com/Kataman7">
-                <img src="resources/icons/github.svg" alt="" /> GitHub</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/antonin-chabaud-pech-753b492aa/"
-              >
-                <img src="resources/icons/linkedin.svg" alt="" /> LinkedIn</a
-              >
-            </li>
-            <li>
-              <a href="https://www.instagram.com/antonin.cp">
-                <img src="resources/icons/instagram.svg" alt="" /> Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                href="mailto:antonin.chabaud-pech@etu.umontpellier.fr"
-                onclick="copyMail()"
-              >
-                <img src="resources/icons/email.svg" alt="" /> eMail</a
-              >
-            </li>
-            <li>
-              <a href="https://www.picokeebs.fr/">
-                <img src="resources/icons/picokeebs.svg" alt="" /> PicoKeebs</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>About me</h3>
-        </div>
-        <div>
-          <p>
-            Passionate about software development I design software, mobile
-            applications and websites. I also run a micro-business specializing
-            in the creation and sale of custom customized keyboards, which
-            reflects my entrepreneurial spirit and my passion for technology. I
-            enjoy challenges that allow me to enrich my skills and participate
-            in innovative innovative projects.
-          </p>
-        </div>
-        <div>
-          <h3>Experience</h3>
-        </div>
-        <div>
-          <p>
-            Design and development of web applications interfaces. Design and
-            operation of databases.
-          </p>
-          <p>
-            Design and development of customized keyboards. Assembly computer
-            assembly, video game games. Music music.
-          </p>
-        </div>
-        <div>
-          <h3>Formation</h3>
-        </div>
-        <div>
-            <section>
-                <div>
-                  <h4>BUT Computer Science</h4>
-                  <div>
-                    <p>IUT Montpellier-Sète</p>
-                    <p>2023-2024</p>
-                  </div>
-                </div>
-                <div>
-                  <h4>General Baccalaureate</h4>
-                  <div>
-                    <p>Maths & English Spec</p>
-                    <p>2023</p>
-                  </div>
-                </div>
-              </section>
-        </div>
-        <div>
-          <h3>Business</h3>
-        </div>
-        <div>
-          <p>
-            PicoKeebs is my business focused on creating custom keyboards,
-            including MIDI keyboards for musicians. I developed the online store
-            myself using PHP and design each keyboard from the PCB to the case.
-            My goal is to provide unique, high-quality products that blend
-            aesthetics, performance, and functionality for tech and music
-            enthusiasts.
-          </p>
-        </div>
-        <div>
-          <h3>Hobbies</h3>
-        </div>
-        <div>
-          <p>
-            Programming, Code Game Jam, custom keyboards, hardware, music,
-            badminton, travel.
-          </p>
-        </div>
-        <div>
-          <h3>Languages</h3>
-        </div>
-        <div>
-          <section>
-            <div>
-              <p>C#</p>
-              <div class="bar_bg">
-                <div class="bar_front" style="width: 88%"></div>
-              </div>
-            </div>
-            <div>
-              <p>Python</p>
-              <div class="bar_bg">
-                <div class="bar_front" style="width: 60%"></div>
-              </div>
-            </div>
-            <div>
-              <p>Java</p>
-              <div class="bar_bg">
-                <div class="bar_front" style="width: 96%"></div>
-              </div>
-            </div>
-            <div>
-              <p>C</p>
-              <div class="bar_bg">
-                <div class="bar_front" style="width: 80%"></div>
-              </div>
-            </div>
-            <div>
-              <p>SQL</p>
-              <div class="bar_bg">
-                <div class="bar_front" style="width: 75%"></div>
-              </div>
-            </div>
-            <div>
-              <p>JavaScript</p>
-              <div class="bar_bg">
-                <div class="bar_front" style="width: 86%"></div>
-              </div>
-            </div>
-            <div>
-              <p>PHP</p>
-              <div class="bar_bg">
-                <div class="bar_front" style="width: 85%"></div>
-              </div>
-            </div>
-            <div>
-              <p>Lua</p>
-              <div class="bar_bg">
-                <div class="bar_front" style="width: 65%"></div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-    </main>
-    <footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antonin Chabaud-Pech</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="resources/icons/slack.svg" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="burger-menu">
+    <span></span>
+  </div>
+
+  <header>
+    <h1>Antonin Chabaud-Pech</h1>
+    <h2>Computer science student</h2>
+    <h3>Sète, France</h3>
+  </header>
+  <main>
+    <section>
       <div>
-        <h3>Time in Sète</h3>
-        <h3 id="clock"></h3>
+        <h3>Links</h3>
       </div>
       <div>
-        <img src="resources/signature.png" alt="signature" />
+        <ul>
+          <li>
+            <a href="https://github.com/Kataman7" target="_blank" class="button">
+              <img src="resources/icons/github.svg" alt="">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/antonin-chabaud-pech-753b492aa/" target="_blank" class="button">
+              <img src="resources/icons/linkedin.svg" alt="">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="resources/CV.pdf" target="_blank" class="button">
+              <img src="resources/icons/cv.svg" alt="">
+              CV </a>
+          </li>
+          <!--
+          <li>
+            <a href="https://www.instagram.com/antonin.cp" target="_blank" class="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z" />
+              </svg>
+              Instagram
+            </a>
+          </li>
+          -->
+          <li>
+            <a class="button" onclick="copyMail()">
+              <img src="resources/icons/email.svg" alt="">
+              eMail
+            </a>
+          </li>
+          <!--
+          <li>
+            <a href="https://www.picokeebs.fr/" target="_blank" class="button">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="503.000000pt" height="496.000000pt"
+                viewBox="0 0 503.000000 496.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,496.000000) scale(0.100000,-0.100000)" stroke="none">
+                  <path
+                    d="M2235 4924 c-405 -59 -777 -199 -1094 -410 -24 -16 -51 -33 -60 -39 -185 -114 -477 -402 -608 -601 -7 -11 -34 -50 -60 -89 -90 -136 -171 -295 -235 -460 -99 -260 -147 -525 -148 -820 0 -224 32 -491 77 -645 74 -257 82 -276 185 -485 147 -299 285 -480 557 -735 40 -37 191 -150 200 -150 6 0 11 -4 11 -8 0 -20 441 -262 477 -262 4 0 26 -9 48 -19 80 -39 279 -103 373 -121 30 -5 57 -12 61 -15 5 -2 67 -13 139 -25 248 -38 652 -25 887 30 78 18 197 51 225 62 14 5 59 21 100 34 41 14 85 31 97 39 12 8 27 15 33 15 29 0 364 181 420 227 8 7 60 45 115 86 188 140 393 354 537 562 78 114 185 311 249 460 26 61 89 255 89 273 0 8 8 44 19 80 64 226 86 559 56 842 -19 179 -35 252 -102 459 -55 172 -167 415 -243 528 -17 24 -30 46 -30 49 0 8 -139 198 -168 230 -16 17 -39 44 -51 60 -62 80 -212 221 -332 314 -18 14 -38 31 -45 38 -7 6 -15 12 -18 12 -3 0 -33 20 -68 44 -79 55 -164 106 -298 178 -211 113 -525 217 -785 259 -114 18 -494 20 -610 3z m524 -1145 c74 -11 149 -31 231 -61 63 -24 143 -59 150 -67 3 -3 17 -12 33 -20 15 -8 27 -18 27 -23 0 -4 9 -8 20 -8 11 0 20 -4 20 -10 0 -5 13 -16 30 -25 44 -23 180 -160 237 -240 107 -149 180 -323 214 -515 27 -145 7 -417 -36 -500 -8 -16 -15 -36 -15 -44 0 -15 -21 -70 -43 -111 -6 -11 -22 -42 -36 -70 -14 -27 -29 -54 -34 -60 -4 -5 -27 -36 -51 -67 -61 -80 -148 -162 -233 -219 -40 -27 -75 -49 -79 -49 -4 0 -15 -6 -23 -13 -9 -8 -41 -24 -71 -36 -30 -12 -68 -28 -85 -36 -105 -46 -264 -64 -572 -65 l-271 0 -4 -152 c-3 -130 -6 -158 -23 -188 -39 -69 -55 -84 -123 -114 -59 -27 -100 -30 -165 -10 -48 14 -72 29 -113 72 -47 47 -53 59 -58 105 -9 85 -14 1499 -7 1953 l6 421 30 43 c42 61 79 93 122 106 50 16 828 18 922 3z" />
+                  <path
+                    d="M2172 2664 l3 -649 108 -3 c169 -5 466 14 518 33 135 51 239 126 309 225 29 40 46 69 56 90 3 8 12 29 19 45 25 55 55 188 55 239 0 81 -43 249 -81 316 -5 8 -13 24 -18 35 -5 12 -16 27 -25 34 -9 7 -16 18 -16 24 0 16 -138 147 -155 147 -8 0 -15 3 -15 8 0 9 -67 44 -140 73 -51 20 -76 22 -338 26 l-282 5 2 -648z" />
+                </g>
+              </svg>
+              PicoKeebs
+            </a>
+          </li>
+          -->
+        </ul>
       </div>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+      <div>
+        <h3>About me</h3>
+      </div>
+      <div>
+        <p>
+          Passionate about software development I design software, mobile
+          applications and websites. I also run a micro-business specializing
+          in the creation and sale of custom customized keyboards, which
+          reflects my entrepreneurial spirit and my passion for technology. I
+          enjoy challenges that allow me to enrich my skills and participate
+          in innovative innovative projects.
+        </p>
+      </div>
+      <div>
+        <h3>Education</h3>
+      </div>
+      <div>
+        <section>
+          <div>
+            <h4>BUT Computer Science</h4>
+            <div>
+              <p>IUT Montpellier-Sète</p>
+              <p>2023-2026</p>
+            </div>
+          </div>
+          <div>
+            <h4>General Baccalaureate</h4>
+            <div>
+              <p>Maths & English Spec</p>
+              <p>2023</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div>
+        <h3>Expertise</h3>
+      </div>
+      <div>
+        <p>
+          I specialize in the design and development of web applications and user interfaces, as well as the design and
+          management of databases. I am experienced in administering complex IT communication systems, ensuring reliable
+          and efficient infrastructure.
+        </p>
+        <p>
+          I also have expertise in customized keyboard design and assembly, as well as computer building. In addition, I
+          am passionate about video game development and music composition.
+        </p>
+        <p>
+          Native French speaker, proficient in English at the B2 level.
+          Holder of a full, valid driver’s license.
+        </p>
+      </div>
+      <div>
+        <h3>Languages</h3>
+      </div>
+      <div>
+        <section>
+          <div>
+            <p>C#</p>
+            <div class="bar_bg">
+              <div class="bar_front" style="width: 88%"></div>
+            </div>
+          </div>
+          <div>
+            <p>Python</p>
+            <div class="bar_bg">
+              <div class="bar_front" style="width: 60%"></div>
+            </div>
+          </div>
+          <div>
+            <p>Java</p>
+            <div class="bar_bg">
+              <div class="bar_front" style="width: 96%"></div>
+            </div>
+          </div>
+          <div>
+            <p>C</p>
+            <div class="bar_bg">
+              <div class="bar_front" style="width: 80%"></div>
+            </div>
+          </div>
+          <div>
+            <p>SQL & PLSQL</p>
+            <div class="bar_bg">
+              <div class="bar_front" style="width: 75%"></div>
+            </div>
+          </div>
+          <div>
+            <p>JavaScript</p>
+            <div class="bar_bg">
+              <div class="bar_front" style="width: 86%"></div>
+            </div>
+          </div>
+          <div>
+            <p>PHP</p>
+            <div class="bar_bg">
+              <div class="bar_front" style="width: 85%"></div>
+            </div>
+          </div>
+          <div>
+            <p>Lua</p>
+            <div class="bar_bg">
+              <div class="bar_front" style="width: 65%"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div>
+        <h3>Experience</h3>
+      </div>
+      <div>
+        <h4><a href="https://www.picokeebs.fr" target="_blank">PicoKeebs.fr</a></h4>
+        <p>
+          PicoKeebs is my business focused on creating custom keyboards,
+          including MIDI keyboards for musicians. I developed the online store
+          myself using PHP and design each keyboard from the PCB to the case.
+          My goal is to provide unique, high-quality products that blend
+          aesthetics, performance, and functionality for tech and music
+          enthusiasts.
+        </p>
+        <h4><a href="https://www.c4w.com" target="_blank">C4W.com</a></h4>
+        <p>
+          I completed a 3-month internship at C4W from January 13 to April 5, 2024. C4W is a software development
+          company specializing in CAD (Computer-Aided Design) solutions for the medical field. During my internship, I
+          gained hands-on experience in the development of tailored software solutions for medical applications.
+        </p>
+      </div>
+      <h3>Projects</h3>
+      <div>
+        <p>Voici une liste de projets dans le cadre</p>
+      </div>
+      <h5>2024 2025</h5>
+      <div>
+        <h4>SAE Train - Board and Card Game</h4>
+        <div>
+          <p>
+            During my first year at IUT in 2024, the SAE Train project was a major milestone. It involved developing a
+            board and card game in Java, featuring an object-oriented architecture and a graphical user interface built
+            with JavaFX.
+          </p>
+          <button class="button" onclick="toggleDetails('projet1', this)">Show Details</button>
+          
+          <div id="projet1" class="hidden">
+            <p>
+              <strong>Project Context:</strong> This project aimed to simulate a board and card game experience,
+              including mechanics for managing a deck of cards, executing card actions, and placing rails on the board
+              to progress in the game.
+            </p>
+            <p>
+              <strong>My Role & Responsibilities:</strong> I was responsible for designing the object-oriented
+              architecture, developing the graphical interface, and implementing game mechanics such as deck management,
+              card actions, and board interactions like rail placement.
+            </p>
+            <p>
+              <strong>Technologies Used:</strong> Java, JavaFX, and various data structures to handle game logic
+              efficiently. The project was test-driven, ensuring each feature was carefully validated during
+              development.
+            </p>
+            <p>
+              <strong>Key Takeaways:</strong> This project significantly strengthened my Java skills, especially in
+              large-scale application development. Working with a test-driven approach and focusing on optimization
+              provided hands-on experience in creating robust, scalable applications.
+            </p>
+            <img src="resources/images/DiagrammeDeClasses.png" alt="class diagram">
+            <img src="resources/images/train.png" alt="board game">
+
+            
+
+          </div>
+        </div>
+      </div>
+      <h5>2024-2025</h5>
+      <div>
+        <div>
+          <h4>Personal Project - Terraria-Like in C</h4>
+          <p>
+            For my personal project, I chose to create a game inspired by Terraria in C. This project allowed me to
+            implement a random world generation algorithm based on cellular automata. Developing the game gave me the
+            chance to enhance my C programming skills, particularly in procedural generation and data structure
+            management. The implementation of this algorithm also helped me better understand the challenges related to
+            optimization and memory management in large projects.
+          </p>
+          <button class="button" onclick="toggleDetails('projet2', this)">Show Details</button>
+          <div class="hidden" id="projet2">
+          </div>
+        </div>
+      </div>
+      <h5>2024-2025</h5>
+      <div>
+        <div>
+          <h4>SAE3A Web Application for Student Academic Tracking</h4>
+          <p>
+            This project involved the creation of a web application in PHP for tracking the academic progress of
+            students.
+            The application allows administrators to manage student records, monitor grades, and ensure that students
+            meet
+            the necessary requirements to enter specific academic programs. The project includes a MySQL database to
+            store
+            student information and academic results, with functionalities for importing student data from external
+            files
+            for easy management. Additionally, the application features a system for creating aggregates, allowing the
+            determination of whether students have met the necessary requirements for admission to a given program. The
+            architecture follows the Model-View-Controller (MVC) pattern, ensuring clear separation of concerns,
+            maintainability, and scalability of the application. The project also focused on optimizing database queries
+            for fast performance when dealing with large amounts of data.
+          </p>
+          <button class="button" onclick="toggleDetails('projet3', this)">Show Details</button>
+          <div class="hidden" id="projet3"></div>
+        </div>
+      </div>
+      <div>
+        <h3>Hobbies</h3>
+      </div>
+      <div>
+        <p>
+          Programming, Code Game Jam, custom keyboards, hardware, music,
+          badminton, travel.
+        </p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+      </div>
+      <div>
+
+        <p> You can contact me directly via email at the following address: <b><a
+              href="mailto:antonin.chabaud-pech@etu.umontpellier.fr">antonin.chabaud-pech@etu.umontpellier.fr</a></b>,
+        </p>
+        <p>or by using the contact form below.</p>
+        </p>
+
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea name="message" rows="6" required></textarea>
+          </div>
+          <input type="hidden" name="access_key" value="d8b94f75-d2c0-4ecf-be4c-89c3fe5b8280">
+          <input type="hidden" name="redirect" value="#contact">
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <h3>Time in Sète</h3>
+      <h3 id="clock"></h3>
+    </div>
+    <div>
+      <img src="resources/images/signature.png" alt="signature" />
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
