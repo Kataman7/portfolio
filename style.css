@@ -28,7 +28,7 @@ body {
   font-family: 'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
   background-color: var(--color-background);
   color: var(--color-primary);
-  animation: slideUP 1s ease-out forwards;
+  animation: slideUp 1s ease-out forwards;
   cursor: url('resources/cursor/astro_arrow_32x32-4.cur'), auto;
 }
 
@@ -241,6 +241,11 @@ footer img {
   width: 100px;
   height: 100px;
   border-radius: 0px 0px 100px 0px;
+}
+
+cite {
+  animation: slideUp 1s ease-out forwards;
+  font-size: smaller;
 }
 
 @media (max-width: 720px) {

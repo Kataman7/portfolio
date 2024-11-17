@@ -64,9 +64,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     async function getRandomQuote() {
         try {
-            const response = await fetch('https://programming-quotes-api.herokuapp.com/quotes/random');
+            const response = await fetch('https://programming-quotesapi.vercel.app/api/random');
             const data = await response.json();
-            quoteText.textContent = `“${data.en}”`;
+            quoteText.textContent = `“${data.quote}”`;
             quoteAuthor.textContent = `— ${data.author}`;
         } catch (error) {
             console.error("Error while retrieving the quote:", error);
