@@ -134,7 +134,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, button:hover {
   cursor: url("resources/cursor/astro_link_32x32-4.cur"), auto;
 }
 
@@ -211,6 +211,13 @@ form input, form textarea {
   font-family: 'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
   padding: 5px;
   font-size: small;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 2px 2px var(--color-background),
+              4px 4px var(--color-primary);
+  border: none;
 }
 
 footer {
