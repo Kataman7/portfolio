@@ -28,7 +28,7 @@ body {
   font-family: 'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
   background-color: var(--color-background);
   color: var(--color-primary);
-  animation: animation 1s ease-out forwards;
+  animation: slideUP 1s ease-out forwards;
   cursor: url('resources/cursor/astro_arrow_32x32-4.cur'), auto;
 }
 
@@ -66,7 +66,7 @@ h4 {
   font-weight: bolder;
   margin-bottom: 10px;
   font-size: large;
-  animation: animation 1s ease-out forwards;
+  animation: slideUp 1s ease-out forwards;
 }
 
 h3, h5 {
@@ -77,7 +77,7 @@ h3, h5 {
 }
 
 h5 {
-  font-size: 11px;
+  font-size: 9px;
   text-align: right;
 }
 
@@ -95,7 +95,7 @@ p {
   line-height: 19px;
 }
 
-::selection, ::-moz-selection {
+::selection {
   background-color: var(--color-primary);
   color: var(--color-background);
 }
@@ -148,7 +148,7 @@ ul {
   list-style-type: none;
   flex-wrap: wrap;
   gap: 15px;
-  animation: animation 1s ease-out forwards;
+  animation: slideUp 1s ease-out forwards;
 }
 
 a svg {
@@ -178,16 +178,19 @@ a svg {
 
 p {
   text-align: justify;
-  animation: animation 1s ease-out forwards;
+  animation: slideUp 1s ease-out forwards;
   margin-bottom: 15px;
 }
 
 .hidden {
   display: none;
+  margin-top: 20px;
+  animation: slideDown 1s ease-out forwards;
 }
 
-img {
+.hidden img, video {
   width: 99%;
+  margin: 5px 0px 5px 0px;
 }
 
 form, form div {
@@ -261,7 +264,7 @@ footer img {
   }
 }
 
-@keyframes animation {
+@keyframes slideUp {
   0% {
       opacity: 0;
       transform: translateY(20px);
@@ -271,3 +274,15 @@ footer img {
       transform: translateY(0);
   }
 }
+
+@keyframes slideDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-28px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
