@@ -175,7 +175,12 @@ a svg {
   width: 0px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   translate: -1px -2px;
-  transition: width 1s ease-out;
+  transition: width 1s ease;
+}
+
+.bar_bg:hover .bar_front {
+  width: 0px !important;
+  transition: width 0.4s ease;
 }
 
 p {
