@@ -8,19 +8,45 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="resources/icons/slack.svg" type="image/x-icon" />
 
+  <!-- Meta tags for SEO -->
+  <meta name="description" content="Portfolio of Antonin Chabaud-Pech, a computer science student, where you can discover his projects, skills, and experiences in software development, mobile apps, and websites.">
+  <meta name="keywords" content="portfolio, computer science, software development, mobile apps, websites, custom keyboards, programming, Java, Python, C#, PHP, SQL, Raylib">
+  <meta name="author" content="Antonin Chabaud-Pech">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Antonin Chabaud-Pech - Portfolio">
+  <meta property="og:description" content="Discover the portfolio of Antonin Chabaud-Pech, a student passionate about programming, custom keyboards, and video game development.">
+  <meta property="og:image" content="resources/images/portfolio-thumbnail.jpg">
+  <meta property="og:url" content="https://kataman7.github.io/portfolio/">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <!-- JSON-LD for structured data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Antonin Chabaud-Pech",
+      "jobTitle": "Computer Science Student",
+      "url": "https://kataman7.github.io/portfolio/",
+      "sameAs": [
+        "https://www.linkedin.com/in/antonin-chabaud-pech",
+        "https://github.com/Kataman7"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sète",
+        "addressCountry": "France"
+      },
+      "email": "mailto:antonin.chabaud-pech@etu.umontpellier.fr",
+      "image": "https://kataman7.github.io/portfolio/resources/images/profile.jpg",
+      "description": "Passionate about software development, custom keyboards, and technology, Antonin is a Computer Science student and founder of PicoKeebs."
+    }
+  </script>
 </head>
-
 <body>
-
-  <div id="burger-menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
   <header>
     <h1>Antonin Chabaud-Pech</h1>
     <h2>Computer science student</h2>
@@ -40,7 +66,7 @@
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/antonin-chabaud-pech-753b492aa/" target="_blank" class="button">
+            <a href="https://www.linkedin.com/in/antonin-chabaud-pech" target="_blank" class="button">
               <img src="resources/icons/linkedin.svg" alt="">
               LinkedIn
             </a>
