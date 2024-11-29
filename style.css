@@ -70,7 +70,8 @@ h4 {
   animation: slideUp 1s ease-out forwards;
 }
 
-h3, h5 {
+h3,
+h5 {
   font-style: italic;
   font-weight: lighter;
   color: var(--color-secondary);
@@ -115,7 +116,7 @@ p {
   border-width: var(--border-normal);
   border-color: var(--color-primary);
   box-shadow: 2px 2px var(--color-background),
-              4px 4px var(--color-primary);
+    4px 4px var(--color-primary);
   text-decoration: none;
 }
 
@@ -135,11 +136,13 @@ a {
   text-decoration: none;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   cursor: url("resources/cursor/astro_link_32x32-4.cur"), auto;
 }
 
-a:hover, strong {
+a:hover,
+strong {
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
@@ -157,7 +160,8 @@ a svg {
   height: 28px;
 }
 
-.bar_bg, .bar_front{
+.bar_bg,
+.bar_front {
   height: 25px;
   border-radius: var(--radius-normal);
 }
@@ -195,12 +199,14 @@ p {
   animation: slideDown 1s ease-out forwards;
 }
 
-.hidden img, video {
+.hidden img,
+video {
   width: 99%;
   margin: 5px 0px 5px 0px;
 }
 
-form, form div {
+form,
+form div {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -214,16 +220,18 @@ form {
   gap: 20px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   font-family: 'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
   padding: 5px;
   font-size: small;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
   box-shadow: 2px 2px var(--color-background),
-              4px 4px var(--color-primary);
+    4px 4px var(--color-primary);
   border: none;
 }
 
@@ -257,7 +265,7 @@ cite {
 .centre {
   display: flex;
   flex-direction: column;
-  justify-content:first baseline;
+  justify-content: first baseline;
   align-items: center;
   gap: 7px;
 }
@@ -269,7 +277,7 @@ cite {
     align-items: center;
     justify-content: center;
     padding: 0 5px;
-    width: 100%; 
+    width: 100%;
   }
 
   ul {
@@ -282,7 +290,8 @@ cite {
     width: 500px;
   }
 
-  .bar_bg, .bar_front{
+  .bar_bg,
+  .bar_front {
     width: 300px;
   }
 
@@ -293,43 +302,74 @@ cite {
 
 @keyframes slideUp {
   0% {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
+
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes slideDown {
   0% {
-      opacity: 0;
-      transform: translateY(-28px);
+    opacity: 0;
+    transform: translateY(-28px);
   }
+
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .skiptranslate iframe {
-    display: none !important;
+  display: none !important;
 }
 
 select.goog-te-combo {
-    background-color: var(--color-background) !important;
-    border: 2px solid var(--color-primary) !important;
-    color: var(--color-primary) !important;
-    font-family: 'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif' !important;
-    padding: 3px !important;
-    border-radius: 0px !important;
+  background-color: var(--color-background) !important;
+  border: 2px solid var(--color-primary) !important;
+  color: var(--color-primary) !important;
+  font-family: 'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif' !important;
+  padding: 3px !important;
+  border-radius: 0px !important;
 }
 
-select.goog-te-combo:active, select.goog-te-combo:focus, select.goog-te-combo:valid {
+select.goog-te-combo:active,
+select.goog-te-combo:focus,
+select.goog-te-combo:valid {
   border-radius: 0px !important;
   border-width: 2px !important;
 }
 
 
+.button {
+  overflow: hidden;
+  position: relative;
+}
 
+/*        sheen effect      */
+/*This is the base aniamtion*/
+.sheen:after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+a.sheen::after {
+  animation: sheen 2s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
