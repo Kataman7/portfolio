@@ -91,7 +91,7 @@ h1 {
   font-weight: bolder;
 }
 
-p {
+p, li {
   font-size: small;
   line-height: 19px;
 }
@@ -144,7 +144,7 @@ a:hover, strong {
   text-decoration-thickness: 2px;
 }
 
-ul {
+ul.navBar {
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
@@ -181,6 +181,10 @@ a svg {
 .bar_bg:hover .bar_front {
   width: 0px !important;
   transition: width 0.4s ease;
+}
+
+.navBar li {
+  font-size: medium;
 }
 
 p {
@@ -262,6 +266,24 @@ cite {
   gap: 7px;
 }
 
+ul.squareListe {
+  list-style-type: none;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+ul.squareListe li::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--color-primary);
+  margin-left: -15px;
+  margin-right: 10px;
+}
+
 @media (max-width: 720px) {
   section {
     display: flex;
@@ -272,7 +294,7 @@ cite {
     width: 100%; 
   }
 
-  ul {
+  ul.navBar {
     justify-content: space-evenly;
   }
 
@@ -313,23 +335,32 @@ cite {
   }
 }
 
+
 .skiptranslate iframe {
     display: none !important;
+    position: fixed !important;
 }
-
-select.goog-te-combo {
+    
+.goog-te-gadget-simple {
     background-color: var(--color-background) !important;
     border: 2px solid var(--color-primary) !important;
     color: var(--color-primary) !important;
     font-family: 'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif' !important;
     padding: 3px !important;
     border-radius: 0px !important;
+    font-size: small !important;
+}
+
+.goog-te-gadget-simple span {
+    color: var(--color-primary) !important;
+}
+
+.goog-te-gadget-simple img {
+    display: none !important;
 }
 
 select.goog-te-combo:active, select.goog-te-combo:focus, select.goog-te-combo:valid {
   border-radius: 0px !important;
   border-width: 2px !important;
 }
-
-
 
