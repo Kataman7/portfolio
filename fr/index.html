@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antonin Chabaud-Pech</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="resources/icons/slack.svg" type="image/x-icon" />
+
+    <!-- Meta tags pour le SEO -->
+    <meta name="description"
+        content="Portfolio d'Antonin Chabaud-Pech, un étudiant en informatique, où vous pouvez découvrir ses projets, compétences et expériences en développement logiciel, applications mobiles et sites web.">
+    <meta name="keywords"
+        content="portfolio, informatique, développement logiciel, applications mobiles, sites web, claviers personnalisés, programmation, Java, Python, C#, PHP, SQL, Raylib">
+    <meta name="author" content="Antonin Chabaud-Pech">
+
+    <!-- Open Graph pour le partage social -->
+    <meta property="og:title" content="Antonin Chabaud-Pech - Portfolio">
+    <meta property="og:description"
+        content="Découvrez le portfolio d'Antonin Chabaud-Pech, un étudiant passionné par la programmation, les claviers personnalisés et le développement de jeux vidéo.">
+    <meta property="og:image" content="resources/images/profil_picture.jpg">
+    <meta property="og:url" content="https://kataman7.github.io/portfolio/resources/images/profil_picture.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- JSON-LD pour les données structurées -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Antonin Chabaud-Pech",
+      "jobTitle": "Étudiant en Informatique",
+      "url": "https://kataman7.github.io/portfolio/",
+      "sameAs": [
+        "https://www.linkedin.com/in/antonin-chabaud-pech",
+        "https://github.com/Kataman7"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sète",
+        "addressCountry": "France"
+      },
+      "email": "mailto:antonin.chabaud-pech@etu.umontpellier.fr",
+      "image": "https://kataman7.github.io/portfolio/resources/images/profile.jpg",
+      "description": "Passionné par le développement logiciel, les claviers personnalisés et la technologie, Antonin est un étudiant en informatique et fondateur de PicoKeebs."
+    }
+  </script>
+</head>
+
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            { pageLanguage: 'fr' },
+            'google_translate_element'
+        );
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<body>
+    <header>
+        <h1>Antonin Chabaud-Pech</h1>
+        <h2>Étudiant en informatique</h2>
+        <h3>Sète, France</h3>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h3>Liens</h3>
+            </div>
+            <div>
+                <ul class="navBar">
+                    <li>
+                        <a href="https://github.com/Kataman7" target="_blank" class="button sheen">
+                            <img src="resources/icons/github.svg" alt="">
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/antonin-chabaud-pech" target="_blank" class="button">
+                            <img src="resources/icons/linkedin.svg" alt="">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resources/CV.pdf" target="_blank" class="button">
+                            <img src="resources/icons/cv.svg" alt="">
+                            CV </a>
+                    </li>
+                    <li>
+                        <a class="button" onclick="copyMail()">
+                            <img src="resources/icons/email.svg" alt="">
+                            eMail
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>À propos de moi</h3>
+            </div>
+            <div>
+                <p>
+                    Passionné par le développement logiciel, je conçois des logiciels, des applications mobiles et des
+                    sites web. Je dirige également une micro-entreprise spécialisée dans la conception et la vente de
+                    claviers personnalisés, ce qui reflète mon esprit entrepreneurial et ma passion pour la technologie.
+                    J'aime les défis qui me permettent d'enrichir mes compétences et de participer à des projets
+                    innovants.
+                </p>
+            </div>
+            <div>
+                <h3>Éducation</h3>
+            </div>
+            <div>
+                <section>
+                    <div>
+                        <h4>BUT Informatique</h4>
+                        <div>
+                            <p>IUT Montpellier-Sète</p>
+                            <p>2023-2026</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Baccalauréat Général</h4>
+                        <div>
+                            <p>Spé. Maths & Anglais</p>
+                            <p>2023</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <h3>Expertise</h3>
+            </div>
+            <div>
+                <p>
+                    Je me spécialise dans la conception et le développement d'applications web et d'interfaces
+                    utilisateur, ainsi que dans la conception et la gestion de bases de données. J'ai de l'expérience
+                    dans l'administration de systèmes complexes de communication informatique, assurant des
+                    infrastructures fiables et efficaces.
+                </p>
+                <p>
+                    J'ai également une expertise dans la conception et l'assemblage de claviers personnalisés, ainsi que
+                    dans la construction d'ordinateurs. Je suis également passionné par le développement de jeux vidéo
+                    et la composition musicale.
+                </p>
+                <p>
+                    Locuteur natif français, connaissance de l'anglais au niveau B2. Titulaire d'un permis de conduire
+                    valide.
+                </p>
+            </div>
+            <div>
+                <h3>Langages</h3>
+            </div>
+            <div>
+                <section>
+                    <div>
+                        <p>C#</p>
+                        <div class="bar_bg">
+                            <div class="bar_front" data-width="88%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Python</p>
+                        <div class="bar_bg">
+                            <div class="bar_front" data-width="60%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Java</p>
+                        <div class="bar_bg">
+                            <div class="bar_front" data-width="96%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>C</p>
+                        <div class="bar_bg">
+                            <div class="bar_front" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>SQL & PLSQL</p>
+                        <div class="bar_bg">
+                            <div class="bar_front" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>JavaScript</p>
+                        <div class="bar_bg">
+                            <div class="bar_front" data-width="86%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>PHP</p>
+                        <div class="bar_bg">
+                            <div class="bar_front" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Lua</p>
+                        <div class="bar_bg">
+                            <div class="bar_front" data-width="65%"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <h3>Expérience</h3>
+            </div>
+            <div>
+                <h4><a href="https://www.picokeebs.fr" target="_blank">PicoKeebs.fr</a></h4>
+                <p>
+                    PicoKeebs est mon entreprise spécialisée dans la construction de claviers personnalisés, y compris
+                    des claviers MIDI pour les musiciens. J'ai développé la boutique en ligne moi-même en utilisant PHP
+                    et je conçois chaque clavier du PCB au boîtier. Mon objectif est de fournir des produits uniques, de
+                    haute qualité qui combinent esthétique, performance et fonctionnalité pour les passionnés de
+                    technologie et de musique.
+                </p>
+                <h4><a href="https://www.c4w.com" target="_blank">C4W.com</a></h4>
+                <p>
+                    J'ai effectué un stage de 3 mois chez C4W du 13 janvier au 5 avril 2024. C4W est une entreprise de
+                    développement logiciel spécialisée dans les solutions de CAO (Conception Assistée par Ordinateur)
+                    pour le domaine médical. Lors de mon stage, j'ai acquis une expérience pratique dans le
+                    développement de solutions logicielles personnalisées pour des applications médicales.
+                </p>
+            </div>
+            <div>
+                <h3>Apprentissage</h3>
+            </div>
+            <div>
+                <h4>Présentation des compétences développées</h4>
+                <p>
+                    Dans le cadre du Bachelor Universitaire de Technologie (BUT) Informatique, parcours
+                    <strong>Réalisation d’Applications : Conception, Développement, Validation (RACDV)</strong>, le
+                    développement des compétences s’organise selon un référentiel national structuré par niveaux. Au
+                    semestre 4, certaines compétences atteignent un <strong>niveau 2</strong>, correspondant à un degré
+                    d’autonomie et de maîtrise intermédiaire, en lien direct avec des mises en situation
+                    professionnelles.
+                </p>
+                <p>
+                    Le présent portfolio s’articule autour de <strong>trois compétences de niveau 2</strong>, qui sont
+                    présentées ci-dessous, chacune accompagnée de ses <em>apprentissages critiques (AC)</em> et de ses
+                    <em>composantes essentielles (CE)</em> associées.
+                </p>
+            </div>
+            <h3>Développer</h3>
+            <div>
+                <h4>Réaliser un développement d'application</h4>
+                <table>
+                    <tr>
+                        <td><strong>AC1</strong></td>
+                        <td>Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des
+                            exigences</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AC2</strong></td>
+                        <td>Appliquer des principes d'accessibilité et d'ergonomie</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AC3</strong></td>
+                        <td>Adopter de bonnes pratiques de conception et de programmation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AC4</strong></td>
+                        <td>Vérifier et valider la qualité de l'application par les tests</td>
+                    </tr>
+                </table>
+            </div>
+            <h3>Optimiser</h3>
+            <div>
+                <h4>Optimiser des applications informatiques</h4>
+                <table>
+                    <tr>
+                        <td><strong>AC1</strong></td>
+                        <td>Choisir des structures de données complexes adaptées au problème</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AC2</strong></td>
+                        <td>Utiliser des techniques algorithmiques adaptées pour des problèmes complexes (ex. :
+                            optimisation, IA…)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AC3</strong></td>
+                        <td>Comprendre les enjeux et moyens de sécurisation des données et du code</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AC4</strong></td>
+                        <td>Évaluer l'impact environnemental et sociétal des solutions proposées</td>
+                    </tr>
+                </table>
+            </div>
+            <h3>Vérifier</h3>
+            <div>
+                <h4>3. Vérifier et valider une application</h4>
+                <table>
+                    <tr>
+                        <td><strong>AC1</strong></td>
+                        <td>Identifier les types de tests adaptés à une situation donnée</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AC2</strong></td>
+                        <td>Construire des jeux d'essai et automatiser les tests</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AC3</strong></td>
+                        <td>Interpréter les résultats pour valider ou corriger les implémentations</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AC4</strong></td>
+                        <td>Documenter et formaliser les procédures de validation</td>
+                    </tr>
+                </table>
+
+                <p>
+                    Ces compétences constituent les fondations du parcours RACDV, en articulant conception rigoureuse,
+                    programmation efficace et validation méthodique. Elles sont au cœur des exigences du BUT
+                    Informatique, et leur acquisition progressive est au centre de l’évaluation du semestre 4.
+                </p>
+            </div>
+
+            <h3>Projets</h3>
+            <div>
+                <p>
+                    Découvrez une sélection de mes projets mettant en avant des efforts de groupe et personnels,
+                    principalement de mon temps à l'IUT. Chaque projet met en lumière des défis uniques et des
+                    opportunités d'apprentissage. Cliquez sur "Voir les détails" pour explorer davantage.
+                </p>
+            </div>
+            <div class="centre">
+                <h5>Avr 2025</h5>
+                <h5>-</h5>
+                <h5>Juin 2025</h5>
+            </div>
+            <div>
+                <h4>SAE – Very Bad Split: Application Web de Gestion Financière d'Événements</h4>
+                <p>
+                    Une application full-stack de budgétisation d'événements développée en PHP (MVC-S), améliorée avec
+                    une bibliothèque de réactivité JavaScript personnalisée et une API REST. Les utilisateurs peuvent
+                    créer des événements, inviter des membres, enregistrer des dépenses et calculer automatiquement les
+                    soldes de dettes basés sur la participation individuelle aux dépenses partagées. Le projet est issu
+                    d'une application défectueuse avec des failles de sécurité, une base de données à table unique et
+                    aucune séparation des préoccupations. Nous avons complètement restructuré et reconstruit le système.
+                </p>
+                <button class="button" onclick="toggleDetails('projetVBS', this)">Voir les détails</button>
+                <div id="projetVBS" class="hidden">
+                    <p>
+                        <strong>Contexte du projet :</strong> L'application originale n'avait aucune architecture, était
+                        truffée de vulnérabilités et utilisait une base de données qui n'était même pas en Première
+                        Forme Normale. Le défi était d'auditer, de refactoriser et de sécuriser le code, de normaliser
+                        la base de données étape par étape et de moderniser l'interface avec de la réactivité et des
+                        appels d'API asynchrones.
+                    </p>
+                    <p>
+                        <strong>Mon rôle et responsabilités :</strong> J'ai analysé et documenté les failles de sécurité
+                        (SQLi, XSS, authentification faible), redessiné et normalisé le schéma de la base de données en
+                        3NF avec justification, implémenté les services principaux de l'application et les points de
+                        terminaison de l'API en PHP, et développé la couche de réactivité en JavaScript pour rendre l'UI
+                        entièrement interactive sans rechargement de page. J'ai également participé à la virtualisation
+                        du projet en utilisant Docker Compose.
+                    </p>
+                    <p>
+                        <strong>Technologies utilisées :</strong> PHP (MVC-S), JavaScript, bibliothèque réactive
+                        personnalisée, MySQL, Docker, Docker Compose, API REST, Twig, AJAX.
+                    </p>
+                    <p>
+                        <strong>Compétences développées :</strong>
+                    <ul class="squareListe">
+                        <li>Audité la qualité et la sécurité de l'application, puis proposé et appliqué des
+                            améliorations structurelles (AC3).</li>
+                        <li>Reconstruit un modèle de base de données en appliquant la normalisation (1NF → 3NF) avec des
+                            décompositions documentées (AC1).</li>
+                        <li>Implémenté une architecture back-end sécurisée et une API REST avec authentification JWT
+                            (AC3, CE1.06).</li>
+                        <li>Créé une interface utilisateur dynamique avec une couche JavaScript réactive personnalisée
+                            et consommation d'API (AC2, AC4).</li>
+                        <li>Appliqué l'architecture MVC-S et introduit des services modulaires et des tests unitaires
+                            avec PHPUnit (AC3, AC4).</li>
+                        <li>Utilisé Docker et Docker Compose pour la virtualisation complète des services et la
+                            cohérence de l'environnement (CE1.06).</li>
+                    </ul>
+                    </p>
+                    <p>
+                        <strong>Points clés à retenir :</strong> Ce projet a été une plongée profonde dans les pratiques
+                        professionnelles de refactorisation. Il a renforcé mes compétences en qualité de code, sécurité,
+                        modélisation de bases de données, conception d'API, découplage frontend/backend et déploiement
+                        de projets full-stack par conteneurisation.
+                    </p>
+
+                    <!-- Image illustrative -->
+                    <a href="resources/images/verybadsplit_interface.png" target="_blank">
+                        <img src="resources/images/verybadsplit_interface.png"
+                            alt="Interface principale de Very Bad Split" style="margin-top: 1em;">
+                    </a>
+                    <p><em>Capture d'écran de l'interface principale de l'application Very Bad Split reconstruite.</em>
+                    </p>
+                </div>
+            </div>
+            <div class="centre">
+                <h5>Avr 2025</h5>
+                <h5>-</h5>
+                <h5>Juin 2025</h5>
+            </div>
+            <div>
+                <h4>Skull – Jeu de Bluff 3D en Ligne</h4>
+                <p>
+                    Un remake 3D du jeu de société Skull, jouable dans le navigateur, créé juste après mon stage en
+                    réutilisant et en étendant les technologies que j'avais apprises.
+                    Le jeu met l'accent sur la stratégie et les mécaniques de bluff, le tout dans une architecture
+                    moderne et évolutive.
+                </p>
+                <button class="button" onclick="toggleDetails('projetSkull', this)">Afficher les détails</button>
+                <div id="projetSkull" class="hidden">
+                    <p>
+                        <strong>Contexte du projet :</strong> Ce projet solo a été conçu comme une version multijoueur
+                        en ligne et entièrement en 3D du jeu Skull,
+                        un jeu stratégique de bluff et de pari. L'objectif était de reproduire fidèlement le gameplay
+                        tout en expérimentant une architecture moderne front-end/back-end.
+                    </p>
+                    <p>
+                        <strong>Mon rôle & responsabilités :</strong> J'ai développé l'ensemble du front-end en React
+                        avec Three.js pour le rendu 3D, et l'ai stylisé avec Tailwind CSS.
+                        Le back-end a d'abord été prototypé en TypeScript, puis entièrement réimplémenté en Java en
+                        utilisant une <strong>architecture hexagonale</strong>
+                        afin d'assurer un couplage faible et une bonne testabilité.
+                        J'ai conçu la logique métier selon les principes SOLID pour garantir la scalabilité et la clarté
+                        du code.
+                    </p>
+                    <p>
+                        <strong>Technologies utilisées :</strong> React, Three.js, Tailwind CSS, TypeScript, Java,
+                        Architecture hexagonale, WebSocket (pour la communication en temps réel).
+                    </p>
+                    <p>
+                        <strong>Compétences développées :</strong>
+                    <ul class="squareListe">
+                        <li>Réutilisation des technologies acquises en stage dans un nouveau contexte projet pour
+                            renforcer mon apprentissage (AC1).</li>
+                        <li>Application de frameworks front-end modernes et de moteurs 3D pour créer une expérience
+                            utilisateur interactive et immersive (AC2, CE1.03).</li>
+                        <li>Conception d’un back-end modulaire avec une logique métier claire, basé sur l’architecture
+                            hexagonale et les principes SOLID (AC3, CE1.06).</li>
+                        <li>Validation du système par des tests de composants et le débogage en temps réel du gameplay
+                            (AC4).</li>
+                    </ul>
+                    </p>
+                    <p>
+                        <strong>Points clés retenus :</strong> Ce projet m’a permis de consolider les concepts
+                        d’architecture découverts pendant mon stage,
+                        d’approfondir ma maîtrise du rendu 3D pour le web, et d’explorer des schémas de conception
+                        back-end avancés en Java.
+                    </p>
+
+                    <!-- Image illustrative -->
+                    <a href="resources/images/skull_ingame.png" target="_blank">
+                        <img src="resources/images/skull_ingame.png"
+                            alt="Capture d’écran d’une partie de Skull en cours" style="margin-top: 1em;">
+                    </a>
+                    <p><em>Capture d’écran d’une partie de Skull en cours, rendue en 3D avec Three.js.</em></p>
+                </div>
+            </div>
+
+            <div class="centre">
+                <h5>Jan 2025</h5>
+                <h5>-</h5>
+                <h5>Mar 2025</h5>
+            </div>
+            <div>
+                <h4>Smile.Web – Application Web 3D pour le Traitement Orthodontique</h4>
+                <p>
+                    Une application web 3D de pointe développée lors de mon stage chez C4W. Construite avec React,
+                    Three.js et Rapier, cette application est conçue pour aider les orthodontistes à visualiser et
+                    planifier les traitements dentaires. Elle facilite également la communication entre les praticiens
+                    et les laboratoires dentaires grâce à une interface collaborative.
+                </p>
+                <button class="button" onclick="toggleDetails('projetSmileWeb', this)">Voir les détails</button>
+                <div id="projetSmileWeb" class="hidden">
+                    <p>
+                        <strong>Contexte du projet :</strong> L'objectif était de créer un outil avancé de visualisation
+                        et d'édition pour les traitements orthodontiques. Les praticiens peuvent interagir avec des
+                        modèles dentaires 3D précis, définir les étapes de traitement et collaborer avec les
+                        laboratoires en temps réel.
+                    </p>
+                    <p>
+                        <strong>Mon rôle et responsabilités :</strong> J'ai développé l'interface d'édition de
+                        traitement en utilisant React, intégré la visualisation 3D avec Three.js et implémenté des
+                        algorithmes complexes pour la détection automatique de collisions entre les maillages 3D. J'ai
+                        également travaillé sur l'amélioration de l'ergonomie de l'UI/UX pour assurer la clarté et la
+                        facilité d'utilisation pour les professionnels dentaires.
+                    </p>
+                    <p>
+                        <strong>Technologies utilisées :</strong> React, Three.js, Rapier, CSS Modules.
+                    </p>
+                    <p>
+                        <strong>Compétences développées :</strong>
+                    <ul class="squareListe">
+                        <li>Implémenté des spécifications fonctionnelles et non fonctionnelles en collaboration avec les
+                            parties prenantes (AC1).</li>
+                        <li>Appliqué des algorithmes 3D avancés pour détecter et résoudre les collisions de maillages
+                            automatiquement (AC2, CE1.03).</li>
+                        <li>Respecté les principes d'ergonomie et d'accessibilité pour optimiser l'expérience
+                            utilisateur (AC2).</li>
+                        <li>Adopté des pratiques de code modulaire et évolutif en React, suivant les principes de
+                            qualité logicielle (AC3, CE1.06).</li>
+                        <li>Intégré des boucles de rétroaction visuelle en temps réel pour valider la détection de
+                            collision et la logique d'édition (AC4).</li>
+                    </ul>
+                    </p>
+                    <p>
+                        <strong>Points clés à retenir :</strong> J'ai approfondi mon expertise en graphismes 3D dans un
+                        contexte web, renforcé ma capacité à concevoir des interfaces utilisateur ergonomiques et relevé
+                        des défis algorithmiques dans une application médicale de qualité professionnelle. Cette
+                        expérience a également renforcé ma compréhension des flux de travail de développement
+                        professionnel et de la communication client.
+                    </p>
+
+                    <p>
+                        <strong>Démonstration en direct :</strong>
+                        <a href="https://viewer.orthup.com/?p=cHJvamVjdC02NTU5OA==" target="_blank">Accéder au
+                            visualiseur Smile.Web</a>
+                    </p>
+
+                    <!-- Images avec légendes -->
+                    <a href="resources/images/smileweb_interface.png" target="_blank">
+                        <img src="resources/images/smileweb_interface.png"
+                            alt="Capture d'écran de l'interface Smile.Web" style="margin-top: 1em;">
+                    </a>
+                    <p><em>Capture d'écran de l'interface d'édition de traitement Smile.Web.</em></p>
+
+                    <a href="resources/images/smileweb_collision.png" target="_blank">
+                        <img src="resources/images/smileweb_collision.png" alt="Aperçu de l'algorithme de collision 2"
+                            style="margin-top: 1em;">
+                    </a>
+                    <p><em>Aperçus visuels de l'algorithme de détection de collision automatique entre les maillages
+                            dentaires.</em></p>
+                </div>
+            </div>
+            <div class="centre">
+                <h5>Sept 2024</h5>
+                <h5>-</h5>
+                <h5>Déc 2024</h5>
+            </div>
+            <div>
+                <h4>SAE 3A - Application Web pour le Suivi Académique des Étudiants</h4>
+                <p>
+                    Une application web complète développée en PHP et MySQL pour rationaliser le suivi académique des
+                    étudiants. Ce projet a amélioré mes compétences en développement web et en optimisation de bases de
+                    données tout en mettant l'accent sur l'importance de la conception centrée sur l'utilisateur.
+                    L'objectif principal était d'appliquer la méthodologie Agile, qui comprenait l'organisation des
+                    tâches sur Trello, la réalisation de sprints et la collaboration avec un client par le biais de
+                    revues de sprint.
+                </p>
+                <button class="button" onclick="toggleDetails('projet3', this)">Voir les détails</button>
+                <div id="projet3" class="hidden">
+                    <p>
+                        <strong>Contexte du projet :</strong> Conçue pour faciliter la gestion des dossiers étudiants,
+                        le suivi des notes et la vérification de l'éligibilité aux programmes académiques. Les pratiques
+                        Agile étaient au cœur de ce projet, nous aidant à développer et à affiner l'application de
+                        manière itérative en fonction des retours des clients lors des revues de sprint.
+                    </p>
+                    <p>
+                        <strong>Mon rôle et responsabilités :</strong> J'ai implémenté le schéma de la base de données,
+                        optimisé les requêtes et développé le front-end et le back-end en suivant le modèle MVC. J'ai
+                        également activement contribué à la planification des sprints et à la gestion des tâches sur
+                        Trello.
+                    </p>
+                    <p>
+                        <strong>Technologies utilisées :</strong> PHP, MySQL et JavaScript pour l'interactivité
+                        front-end.
+                    </p>
+                    <p>
+                        <strong>Compétences développées :</strong>
+                    <ul class="squareListe">
+                        <li>Formalisé les exigences des clients et des utilisateurs et implémenté les spécifications
+                            fonctionnelles et non fonctionnelles (AC11).</li>
+                        <li>Conçu et optimisé les schémas de bases de données relationnelles pour une gestion efficace
+                            des données (CE1.06).</li>
+                        <li>Implémenté une logique back-end sécurisée et évolutive en utilisant PHP et MySQL (AC3).</li>
+                        <li>Appliqué les principes d'accessibilité et d'ergonomie pour créer une interface conviviale
+                            (AC2).</li>
+                        <li>Adopté les meilleures pratiques de codage et de documentation pour assurer la maintenabilité
+                            (C21.04).</li>
+                        <li>Validé la qualité de l'application par des tests rigoureux (AC3).</li>
+                        <li>Organisé la récupération et la présentation des données en utilisant des pages web
+                            dynamiques et l'intégration de bases de données (CE1.03).</li>
+                        <li>Optimisé les requêtes et les structures de bases de données pour gérer des données à grande
+                            échelle (AC1).</li>
+                    </ul>
+                    </p>
+                    <p>
+                        <strong>Points clés à retenir :</strong> Amélioré ma compréhension de la conception
+                        d'applications web évolutives, optimisé les opérations de bases de données pour les grands
+                        ensembles de données et acquis une expérience pratique des flux de travail Agile tels que la
+                        planification des sprints, la priorisation des tâches et le développement itératif.
+                    </p>
+                    <a href="resources/images/capynote.png" target="_blank">
+                        <img src="resources/images/capynote.png" alt="diagramme de classe">
+                    </a>
+                </div>
+            </div>
+            <div class="centre">
+                <h5>Août 2024</h5>
+                <h5>-</h5>
+                <h5>Sept 2024</h5>
+            </div>
+            <div>
+                <h4>Projet Personnel - Terraria-Like en C</h4>
+                <p>
+                    Un projet solo passionnant inspiré de Terraria, où j'ai construit un jeu avec une génération de
+                    monde procédurale utilisant des automates cellulaires. Ce voyage a approfondi ma compréhension de
+                    l'optimisation, de la gestion de la mémoire et de la conception algorithmique.
+                </p>
+                <button class="button" onclick="toggleDetails('projet2', this)">Voir les détails</button>
+                <div id="projet2" class="hidden">
+                    <p>
+                        <strong>Contexte du projet :</strong> Axé sur la mise en œuvre de la génération de terrain
+                        aléatoire et du gameplay inspiré des mécaniques de bac à sable de Terraria.
+                    </p>
+                    <p>
+                        <strong>Mon rôle et responsabilités :</strong> Développé la logique principale du jeu,
+                        implémenté la génération procédurale utilisant des automates cellulaires et optimisé la gestion
+                        des ressources.
+                    </p>
+                    <p>
+                        <strong>Technologies utilisées :</strong> C, Raylib et des algorithmes personnalisés pour une
+                        génération de monde efficace.
+                    </p>
+                    <p>
+                        <strong>Compétences développées :</strong>
+                    <ul class="squareListe">
+                        <li>Conçu et implémenté des algorithmes avancés pour la génération de terrain (CE1.03).</li>
+                        <li>Optimisé l'utilisation de la mémoire pour la gestion de grands ensembles de données (AC3).
+                        </li>
+                        <li>Choisi et utilisé des ressources techniques appropriées pour le rendu graphique et les
+                            mécaniques de jeu (CE1.06).</li>
+                        <li>Adopté les meilleures pratiques pour la qualité du code et la documentation (C21.04).</li>
+                        <li>Développé des solutions évolutives en appliquant les principes de complexité algorithmique
+                            et d'optimisation des structures de données (AC1).</li>
+                        <li>Renforcé la compréhension de l'accessibilité et de l'ergonomie à travers la conception de
+                            gameplay (AC2).</li>
+                        <li>Testé et validé la fonctionnalité de l'application par des cycles de développement
+                            itératifs.</li>
+                    </ul>
+                    </p>
+                    <p>
+                        <strong>Points clés à retenir :</strong> Amélioré mes compétences en programmation C, en
+                        particulier en résolution de problèmes algorithmiques et en code efficace en mémoire.
+                    </p>
+                    <video controls>
+                        <source src="resources/video/TerrariaLike.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la vidéo.
+                    </video>
+                </div>
+            </div>
+            <div class="centre">
+                <h5>Mai 2024</h5>
+                <h5>-</h5>
+                <h5>Juin 2024</h5>
+            </div>
+            <div>
+                <h4>SAE Train - Jeu de Plateau et de Cartes</h4>
+                <div>
+                    <p>
+                        Un projet de groupe dynamique dans lequel j'ai développé un jeu de plateau et de cartes en Java,
+                        intégrant une conception orientée objet et une interface conviviale. Ce projet a réuni
+                        créativité et expertise technique pour créer une expérience de jeu captivante.
+                    </p>
+                    <button class="button" onclick="toggleDetails('projet1', this)">Voir les détails</button>
+                    <div id="projet1" class="hidden">
+                        <p>
+                            <strong>Contexte du projet :</strong> L'objectif était de simuler un jeu de plateau et de
+                            cartes, incorporant des fonctionnalités comme la gestion du paquet de cartes, l'exécution
+                            d'actions et les mécaniques de placement de rails.
+                        </p>
+                        <p>
+                            <strong>Mon rôle et responsabilités :</strong> Conçu l'architecture du système, implémenté
+                            l'interface du jeu et assuré des mécaniques fluides pour les interactions entre le paquet et
+                            le plateau.
+                        </p>
+                        <p>
+                            <strong>Technologies utilisées :</strong> Java, JavaFX, développement piloté par les tests
+                            et structures de données avancées.
+                        </p>
+                        <p>
+                            <strong>Compétences développées :</strong>
+                        <ul class="squareListe">
+                            <li>Appliqué les principes algorithmiques pour implémenter les mécaniques de jeu (CE1.03).
+                            </li>
+                            <li>Assuré le respect des normes de qualité et de documentation du code (C21.04).</li>
+                            <li>Choisi des ressources techniques appropriées pour une implémentation efficace (CE1.06).
+                            </li>
+                            <li>Conçu et implémenté des spécifications fonctionnelles et non fonctionnelles à partir des
+                                exigences (AC11).</li>
+                            <li>Adopté les meilleures pratiques pour la conception, la programmation et les tests afin
+                                de valider la qualité de l'application.</li>
+                            <li>Utilisé des structures de données complexes pour résoudre des problèmes (AC1).</li>
+                            <li>Amélioré la compréhension des principes de sécurité des données et du code (AC3).</li>
+                            <li>Souligné les principes de conception d'accessibilité et d'ergonomie (AC2).</li>
+                        </ul>
+                        </p>
+                        <p>
+                            <strong>Points clés à retenir :</strong> Renforcé la maîtrise de Java et acquis une
+                            expérience précieuse dans la création d'applications évolutives et pilotées par les tests.
+                        </p>
+                        <a href="resources/images/train.png" target="_blank"> <img src="resources/images/train.png"
+                                alt="Capture d'écran du jeu de plateau"></a>
+                    </div>
+                </div>
+            </div>
+            <h3>Loisirs</h3>
+            </div>
+            <div>
+                <p>
+                    Programmation, Code Game Jam, claviers personnalisés, matériel informatique, musique, badminton,
+                    voyage.
+                </p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+            </div>
+            <div>
+                <p>Vous pouvez me contacter directement par email à <br>
+                    <b><a
+                            href="mailto:antonin.chabaud-pech@etu.umontpellier.fr">antonin.chabaud-pech@etu.umontpellier.fr</a></b>
+                </p>
+                <p>Sinon, n'hésitez pas à utiliser le formulaire de contact ci-dessous pour me contacter.</p>
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact">
+                    <div>
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" required />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required />
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" rows="6" required></textarea>
+                    </div>
+                    <input type="hidden" name="access_key" value="d8b94f75-d2c0-4ecf-be4c-89c3fe5b8280">
+                    <input type="hidden" name="redirect" value="#contact">
+                    <button type="submit" class="button">Envoyer</button>
+                </form>
+            </div>
+            <h3>Citations</h3>
+            <div>
+                <p>Voici une citation aléatoire pour vous à méditer avant de partir :</p>
+                <blockquote id="quote">
+                    <p>« Un bug n'est pas une erreur, c'est une fonctionnalité non découverte. »</p>
+                    <cite>Douglas Adams</cite>
+                </blockquote>
+            </div>
+            <h3>Signature</h3>
+            <div>
+                <h4>Merci pour votre visite !</h4>
+                <p>
+                    Je suis toujours enthousiaste à l'idée de collaborer sur des projets innovants et de relever de
+                    nouveaux défis. N'hésitez pas à me contacter si vous souhaitez échanger ou discuter d'une idée !
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Heure à Sète</h3>
+            <h3 id="clock"></h3>
+        </div>
+        <div>
+            <img src="resources/images/signature.png" alt="signature" />
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
